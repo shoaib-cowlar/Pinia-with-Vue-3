@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
+body {
+  background: #f2f2f2;
+  color: #444;
+  margin: 0;
+}
+body * {
+  font-family: "Poppins";
+}
+
+/* header */
+header {
+  text-align: center;
+  background: #e7e7e7;
+  padding-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+header img {
+  max-width: 60px;
+  transform: rotate(-10deg);
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  padding-top: 25px;
+  margin-left: 15px;
+  color: #777;
+  transform: rotate(2deg);
+}
+
+.container {
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-block: 16px;
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 6px;
+}
+.task .icons {
+  display: flex;
+  gap: 16px;
+  color: rgb(167, 166, 166);
+}
+.task .icons i {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.task .icons i:hover {
+  color: #777;
+}
+.btn-container {
+  text-align: end;
+  padding: 16px;
+}
+button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(190, 190, 190);
+  cursor: pointer;
+}
