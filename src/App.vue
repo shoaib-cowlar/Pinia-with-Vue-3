@@ -14,13 +14,15 @@
 
 
 
-    <!-- toggle buttons -->
-
+    <!-- filter buttons -->
     <nav class="container btn-container">
         <button @click="filter = 'favs'">Show Only Favs</button>
         <button @click="filter = 'all'">Show All </button>
       </nav>
 
+      <!-- Loading -->
+
+      <div class="loading" v-if="taskStore.loading">Loading tasks ...</div>
     <!-- task list -->
     <div class="container task-list">
       <div v-if="filter === 'all'">
@@ -47,6 +49,9 @@ import TaskLists from "./components/TaskLists.vue";
 import TaskForm from "./components/TaskForm.vue";
 import { ref } from "vue";
 const taskStore = useTaskStore();
+// fetch the tasks
+taskStore.getTasks();
+
 const filter = ref("all");
 </script>
 

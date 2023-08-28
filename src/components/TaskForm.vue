@@ -19,6 +19,10 @@ const handleSubmit = () => {
       isFav: false,
       id: Math.floor(Math.random() * 1000),
     });
+    console.log({
+      title: newTask.value,
+      isFav: false,
+      id: Math.floor(Math.random() * 1000),});
     newTask.value = "";
   }
 };
